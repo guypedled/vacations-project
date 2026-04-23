@@ -1,3 +1,6 @@
+## GitHub Repository
+https://github.com/guypedled/vacations-project
+
 # 🌍 VacationHub Project
 
 ## 📌 Project Overview
