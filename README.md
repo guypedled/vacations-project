@@ -5,7 +5,7 @@ https://github.com/guypedled/vacations-project
 
 ## 📌 Project Overview
 
-VacationHub is a full-stack web application that allows users to browse vacations, like them, get AI recommendations, and analyze vacation popularity through reports.
+VacationHub is a full-stack web application that allows users to browse vacations, like them, receive AI-powered recommendations, and analyze vacation popularity through reports and data visualization.
 
 The system includes:
 
@@ -13,9 +13,9 @@ The system includes:
 * Vacation management
 * Likes system
 * AI recommendations
-* Smart MCP questions
+* Smart MCP queries
 * CSV export
-* Data visualization (charts)
+* Interactive charts
 
 ---
 
@@ -26,7 +26,7 @@ The system includes:
 * View vacations
 * Like / Unlike vacations
 * Filter vacations (All, My Likes, Active, Upcoming)
-* Ask smart questions (MCP)
+* Ask smart MCP questions
 * Get AI travel recommendations
 
 ### 👑 Admin
@@ -34,8 +34,8 @@ The system includes:
 * Add new vacations
 * Edit vacations
 * Delete vacations
-* Export CSV report
-* View popularity chart (likes per vacation)
+* Export CSV reports
+* View popularity analytics (likes per vacation)
 
 ---
 
@@ -51,7 +51,7 @@ docker compose up --build
 
 ### 2️⃣ Seed the Database (IMPORTANT)
 
-Run this command to populate the system with data:
+Run this command to populate the system with demo data:
 
 ```bash
 docker exec -it vacations-project-backend-1 node seed.js
@@ -59,21 +59,19 @@ docker exec -it vacations-project-backend-1 node seed.js
 
 👉 This will:
 
-* Create admin user
+* Create demo users and admin access
 * Insert vacations
 * Add initial likes
-* Ensure charts and MCP work correctly
+* Ensure charts and MCP queries work correctly
 
 ---
 
-## 🔐 Admin Credentials
+## 🔐 Demo Access
 
-Use the following credentials:
+Users can register and explore the application for testing and demonstration purposes.
 
-```
-Email: admin@test.com
-Password: 1234
-```
+Admin demo access is also available.  
+Please contact the developer if admin credentials are needed.
 
 ---
 
@@ -81,7 +79,7 @@ Password: 1234
 
 After running:
 
-```
+```text
 http://localhost:5173
 ```
 
@@ -92,7 +90,7 @@ http://localhost:5173
 ### Backend
 
 * Node.js
-* Express
+* Express.js
 * MongoDB (Mongoose)
 * JWT Authentication
 
@@ -107,25 +105,25 @@ http://localhost:5173
 
 ---
 
-## 📊 Reports
+## 📊 Reports & Analytics
 
-* Bar chart showing number of likes per vacation
+* Bar chart displaying likes per vacation
 * CSV export containing:
 
   * Destination
-  * Likes
+  * Likes count
 
 ---
 
 ## 🤖 AI & MCP
 
-### AI Recommendation
+### AI Recommendations
 
-* Generates travel recommendations based on destination
+* Generates travel recommendations based on destination preferences
 
-### MCP Questions
+### MCP Smart Queries
 
-Supports queries like:
+Supports questions such as:
 
 * "What is the average vacation price?"
 * "Which vacation has the most likes?"
@@ -137,15 +135,17 @@ Supports queries like:
 
 * Users must be logged in to access vacations
 * Admin features are restricted to admin users only
-* Likes are user-specific (each user has their own likes)
+* Likes are user-specific
 * Global likes count is shared across all users
 
 ---
 
 ## ✅ Project Status
 
-✔ Fully functional
-✔ Meets all requirements
-✔ Ready for submission
+✔ Fully functional  
+✔ Dockerized environment  
+✔ AI integration included  
+✔ Responsive UI  
+✔ Ready for deployment
 
 ---
